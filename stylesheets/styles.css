@@ -2,3 +2,79 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Setting up margin to complete page */
+.main-container{
+    margin: .7rem;
+    /* filter:opacity(0.5);
+    filter:blur(4px); */
+}
+
+/* For header width */
+.row{
+    margin:0
+}
+
+/* Changing the alignment of Addressbook title with respect to logo */
+h2{
+    margin:0px;
+    padding-top: 4px;
+}
+
+/* Changing look and feel of create button */
+.contact-search{
+    place-content: center;
+}
+
+#search{
+    width: 28rem;
+}
+
+/* Editing the Contact Table */
+.table-head{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(135, 147, 248, 0.086);
+}
+
+.table-striped tbody tr:hover{
+    background-color: rgb(127, 170, 250, 0.2);
+}
+
+/* Editing the cards section */
+.cards-flex-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* Editing the cards internal UI */
+.contact-card{
+    padding: .6em;
+    display: flex;
+    max-width: 30rem;
+    align-items: center;
+    border: rgb(81, 164, 241) .01em solid;
+    background-color: rgb(81, 164, 241, 0.3);
+}
+
+.profile-picture-container{
+    width: auto;
+    margin-right: .7em;
+}
+
+.profile-picture{
+    width: 8rem;
+}
+
+/* Creating pop up for create contact */
+.modal-dialog{
+}
