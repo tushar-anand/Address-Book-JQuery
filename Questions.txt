@@ -1,0 +1,1 @@
+1. When I am pasting the jquery script below popper js its throwing error.
