@@ -18,7 +18,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    
+
 
     <!-- Linking Custom CSS -->
     <link rel="stylesheet" href="stylesheets/styles.css">
@@ -41,8 +41,8 @@
             </div>
             <div class="col-6 p-3 my-3">
                 <div class="contact-search form-inline">
-                    <input type="text" class="form-control" placeholder="Search" id="search-textbox">
-                    <button type="button" class="btn btn-primary" id="search-btn"><i class="fa fa-search"
+                    <input type="text" class="form-control" placeholder="Search" id="searchbox">
+                    <button type="button" class="btn btn-primary" id="searchbtn"><i class="fa fa-search"
                             aria-hidden="true"></i>
                     </button>
 
@@ -50,17 +50,26 @@
             </div>
             <div class="col-3 p-3 my-3">
                 <button type="button" class="create-button btn btn-outline-primary btn-block" data-toggle="modal"
-                    data-target="#create-contact-popup"  data-keyboard="false" data-backdrop= "static">+ Create</button>
+                    data-target="#create-contact-popup" data-keyboard="false" data-backdrop="static">+ Create</button>
             </div>
         </div>
 
         <section class="cards-flex-container">
-            <div class="contact-card">
+            <p id="noRecords">There are no contacts present. Please click on Create button to add a new contact.</p>
+            <!-- <div class="contact-card card-structure">
                 <div class="profile-picture-container">
                     <img class="rounded-circle profile-picture" src="images/profile-picture.png" alt="profie picture">
                 </div>
                 <div class="profile-details">
-                    <h4>Tushar Anand</h4>
+                    <div class="card-title">
+                        <h4>Tushar Anand</h4>
+                        <div class="actionButtons">
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-pencil"></i>
+                            <i class="fa fa-trash"></i>
+                        </div>
+                    </div>
+                    <hr>
                     <div class="card-phone-number">
                         <span><b>Phone:</b></span>
                         <span>+91 8789067614</span>
@@ -82,7 +91,7 @@
                         <span>Kondapur, Hyderbad, India</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </div>
 
@@ -101,38 +110,46 @@
                         <div class="row form-row">
                             <div class="col">
                                 <label for="fname">First Name:</label>
-                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="firstname">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
+                                    name="firstname">
                             </div>
                             <div class="col">
                                 <label for="lname">Last Name:</label>
-                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lastname">
+                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                    name="lastname">
                             </div>
                         </div>
                         <div class="row form-row">
                             <div class="col">
                                 <label for="phone">Phone:</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone">
+                                <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number"
+                                    name="phone">
                             </div>
                             <div class="col">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                    name="email">
                             </div>
                         </div>
                         <div class="row form-row">
                             <div class="col">
                                 <label for="jobTitle">Job Title:</label>
-                                <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title" name="jobtitle">
+                                <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title"
+                                    name="jobtitle">
                             </div>
                             <div class="col">
                                 <label for="company">Company:</label>
-                                <input type="Text" class="form-control" id="company" placeholder="Enter Company Name" name="companyname">
+                                <input type="Text" class="form-control" id="company" placeholder="Enter Company Name"
+                                    name="companyname">
                             </div>
                         </div>
                         <div class="row form-group">
                             <label for="addressLineOne">Address Line 1:</label>
-                            <input type="textarea" class="form-control" id="addressLineOne" placeholder="Enter Address Line 1" name="addressLineOne">
+                            <input type="textarea" class="form-control" id="addressLineOne"
+                                placeholder="Enter Address Line 1" name="addressLineOne">
                             <label for="addressLineTwo">Address Line 2:</label>
-                            <input type="textarea" class="form-control" id="addressLineTwo" placeholder="Enter Address Line 2" name="addressLineTwo">
+                            <input type="textarea" class="form-control" id="addressLineTwo"
+                                placeholder="Enter Address Line 2" name="addressLineTwo">
                         </div>
                     </div>
 
@@ -140,14 +157,15 @@
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
                         <button type="reset" class="btn btn-secondary">Clear</button>
-                        <button type="submit" class="btn btn-success" data-dismiss="modal" id="saveNewContact">Save</button>
+                        <button type="submit" class="btn btn-success" data-dismiss="modal"
+                            id="saveNewContact">Save</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-            <!-- <div class="contact-table">
+    <!-- <div class="contact-table">
             <table class="table table-striped table-bordered table-hover ">
                 <thead class="table-head">
                   <tr>

@@ -26,32 +26,13 @@ h2{
     place-content: center;
 }
 
-#search-textbox{
+#searchbox{
     width: 28rem;
     margin-right: .3em;
 }
 
 #search-btn{
     border-radius: 50%;
-}
-
-/* Editing the Contact Table */
-.table-head{
-    background-color: cornflowerblue;
-    color: white;
-    text-align: center;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.table-striped tbody tr:nth-of-type(even) {
-    background-color: rgba(135, 147, 248, 0.086);
-}
-
-.table-striped tbody tr:hover{
-    background-color: rgb(127, 170, 250, 0.2);
 }
 
 /* Editing the cards section */
@@ -62,6 +43,10 @@ h2{
 
 
 /* Editing the cards internal UI */
+.profile-details{
+    width: 100%;
+}
+
 .contact-card{
     padding: .6em;
     margin: 0 1em 2em 0;
@@ -85,6 +70,29 @@ h2{
     width: 8rem;
 }
 
+.profile-details div{
+    max-width: 310px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-title{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionButtons i{
+padding: 0 4px;
+/* display: none; */
+}
+
+hr{
+    margin-top: 0;
+}
+
 /* Creating pop up for create contact */
 .close{
     align-self: center;
@@ -93,3 +101,24 @@ h2{
 .form-row{
     margin-bottom: 1em!important;
 }
+
+
+
+/* Editing the Contact Table */
+/* .table-head{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(135, 147, 248, 0.086);
+}
+
+.table-striped tbody tr:hover{
+    background-color: rgb(127, 170, 250, 0.2);
+} */
