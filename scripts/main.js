@@ -9,6 +9,22 @@ $(document).ready(function () {
         $(this).find('form').trigger("reset");
     });
 
+    // var newFormDetails = ($("form").serializeArray());
+    //     console.log(newFormDetails);
+        
+    //     // var stringJSON = JSON.stringify(newFormDetails);
+    //     // console.log(stringJSON);
+
+        
+    //     $.each(newFormDetails, function() {
+    //         $.each(this, function(name, value){
+                
+    //             console.log(`${name} = ${value}`);
+    //         });
+    //     });
+
+    //     console.log(contacts);
+
     //Captuing the form input
     $("#saveNewContact").on("click", function () {
 
